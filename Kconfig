@@ -1,0 +1,23 @@
+#
+# Copyright (c) 2024 Nordic Semiconductor ASA
+#
+# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+#
+
+source "Kconfig.zephyr"
+
+menu "nRF54L15 Hello Application"
+
+config NRF54L15_HELLO_SLOW_MS
+	int "Slow blink interval in milliseconds"
+	default 1000
+	help
+	  Time interval for slow LED blink in milliseconds.
+
+config NRF54L15_HELLO_FAST_MS
+	int "Fast blink interval in milliseconds"
+	default 100
+	help
+	  Time interval for fast LED blink in milliseconds.
+
+endmenu
